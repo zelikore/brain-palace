@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3943dfbb-2d26-41cd-811f-a72446b7002f" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="2GKtXkS3wTHSI0zeRbtVIHfllmY" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration name="core" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="BPS-client" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/core.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.core" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3943dfbb-2d26-41cd-811f-a72446b7002f" name="Default Changelist" comment="" />
+      <created>1666149144065</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1666149144065</updated>
+      <workItem from="1666149148586" duration="322000" />
+      <workItem from="1666149782960" duration="3720000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="184" y="94" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1666149658933">
+      <screen x="0" y="25" width="1440" height="821" />
+    </state>
+    <state x="184" y="94" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.821/-926.-1775.3200.1775@0.25.1440.821" timestamp="1666149658933" />
+    <state width="1398" height="210" key="GridCell.Tab.0.bottom" timestamp="1666151506029">
+      <screen x="0" y="25" width="1440" height="821" />
+    </state>
+    <state width="1398" height="210" key="GridCell.Tab.0.bottom/0.25.1440.821/-926.-1775.3200.1775@0.25.1440.821" timestamp="1666151506029" />
+    <state width="1398" height="210" key="GridCell.Tab.0.center" timestamp="1666151506028">
+      <screen x="0" y="25" width="1440" height="821" />
+    </state>
+    <state width="1398" height="210" key="GridCell.Tab.0.center/0.25.1440.821/-926.-1775.3200.1775@0.25.1440.821" timestamp="1666151506028" />
+    <state width="1398" height="210" key="GridCell.Tab.0.left" timestamp="1666151506028">
+      <screen x="0" y="25" width="1440" height="821" />
+    </state>
+    <state width="1398" height="210" key="GridCell.Tab.0.left/0.25.1440.821/-926.-1775.3200.1775@0.25.1440.821" timestamp="1666151506028" />
+    <state width="1398" height="210" key="GridCell.Tab.0.right" timestamp="1666151506029">
+      <screen x="0" y="25" width="1440" height="821" />
+    </state>
+    <state width="1398" height="210" key="GridCell.Tab.0.right/0.25.1440.821/-926.-1775.3200.1775@0.25.1440.821" timestamp="1666151506029" />
+    <state x="397" y="264" key="com.intellij.ide.util.TipDialog" timestamp="1666149783195">
+      <screen x="0" y="25" width="1440" height="821" />
+    </state>
+    <state x="397" y="264" key="com.intellij.ide.util.TipDialog/0.25.1440.821/-926.-1775.3200.1775@0.25.1440.821" timestamp="1666149783195" />
+    <state x="389" y="69" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1666152561030">
+      <screen x="0" y="25" width="1440" height="821" />
+    </state>
+    <state x="389" y="69" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.25.1440.821/-926.-1775.3200.1775@0.25.1440.821" timestamp="1666152561030" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/BPS_client$core.coverage" NAME="core Coverage Results" MODIFIED="1666151506020" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+  </component>
+</project>
