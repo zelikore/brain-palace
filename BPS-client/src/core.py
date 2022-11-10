@@ -330,8 +330,7 @@ def bootstrap():
             with open(concept['concept'] + '.md', 'r') as f:
                 file_content = f.read()
                 summary = file_content.split('<!--summary: ')[1].split('-->')[0]
-                #updateconfig file
-                bps.updateConcept(concept, summary=summary)
+                bps.updateConcept(concept['concept'], summary=summary)
 
 if __name__ == "__main__":
     if len(sys.argv) == 1:
