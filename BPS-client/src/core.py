@@ -1,5 +1,4 @@
 import time
-
 from yaspin import yaspin
 import pyfiglet
 import typer
@@ -10,22 +9,13 @@ import json
 from markdown_editor import web_edit
 from markdown_editor.editor import MarkdownDocument
 
-
 # used to store all information for files within a BPS directory.
 BPSConfigFile = "./BPS.data.json"
-
 app = typer.Typer()
 
 
 # This code is a cli built for the brain palace system (BPS). the BPS is a way to organize documents and knowledge files
-# into a GIT like system. It will allow users to search for, add, and classify these files as concepts.
-# Concepts can be [ "chinese", "chemistry", "physics", "economics",] and more. each file has a section that
-# serves as a short summary that can be printed with the cli, as well as the maintainers, links, and markup to cross
-# reference between files. the CLI acts as both a viewer and an explorer of the BPS system.
-
-# each concept is it's own file
-# each concept is part of a topic like [ "languages", "mathematics", "science", "social-studies"]
-# each concept can have tags like ['ideas','learn','teach']
+# into a GIT like system.
 
 class BPSclient:
     def __init__(self):
@@ -136,16 +126,19 @@ def viewConcept(concept):
 
 # this function is used to print the summary of a concept
 def printConcept(concept):
-    print(concept['concept'])
+    print('\033[1m' + concept['concept'] + '\033[0m')
     print(concept['summary'])
     print('maintainers: ' + str(concept['maintainers']))
     print('tags: ' + str(concept['tags']))
+    print('topic: ' + str(concept['topic']))
+    print('\n')
 
 
 # this function is used to print the summary of a topic
 def printTopic(topic):
-    print(topic['topic'])
+    print('\033[1m' + topic['topic'] + '\033[0m')
     print(topic['description'])
+    print('\n')
 
 def viewConcept(concept):
     MY_HTML_HEAD = 'Editor title'
@@ -293,6 +286,16 @@ def editConcept(concept: str):
     else:
         print('concept not found')
 
+def welcome():
+    # print welcome message
+    print(pyfiglet.figlet_format('BPS CLI', font='slant'))
+    print('Welcome to the BPS CLI version 0.1')
+    print('\n')
+    print('Type "bps --help" to get started')
+    print('\n')
 
 if __name__ == "__main__":
-    app()
+    if len(sys.argv) == 1:
+        welcome()
+    else:
+        app()
