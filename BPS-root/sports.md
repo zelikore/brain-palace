@@ -1,0 +1,2 @@
+# sports
+<!--summary: Sport (or sports) is all forms of usually competitive physical activity which, through casual or organised participation, aim to use, maintain or improve physical ability and skills while providing enjoyment to participants, and in some cases, entertainment for spectators.-->

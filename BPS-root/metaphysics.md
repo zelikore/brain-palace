@@ -1,0 +1,2 @@
+# metaphysics
+<!--summary: Metaphysics is the branch of philosophy that examines the fundamental nature of reality, including the relationship between mind and matter, between substance and attribute, and between potentiality and actuality. The word "metaphysics" comes from two Greek words that, together, literally mean "after or behind or among [the study of] the natural".-->

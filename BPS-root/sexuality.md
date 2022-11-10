@@ -1,0 +1,2 @@
+# sexuality
+<!--summary: Sexuality is the capacity to have erotic experiences and responses. Sexuality is experienced and expressed in thoughts, fantasies, desires, beliefs, attitudes, values, behaviors, practices, roles and relationships. Some people engage in various sexual activities as a business transaction. Sexuality is influenced by the interaction of biological, psychological, social, economic, political, cultural, ethical, legal, historical, religious and spiritual factors.-->

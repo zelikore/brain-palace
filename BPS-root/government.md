@@ -1,0 +1,2 @@
+# government
+<!--summary: A government is the system or group of people governing an organized community, often a state. In the case of its broad associative definition, government normally consists of legislature, executive, and judiciary. Government is a means by which organizational policies are enforced, as well as a mechanism for determining policy.-->

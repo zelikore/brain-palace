@@ -1,0 +1,2 @@
+# abnormal-psychology
+<!--summary: Abnormal psychology is the branch of psychology that studies unusual patterns of behavior, emotion and thought, which may or may not be understood as precipitating a mental disorder. Although many behaviors could be considered as abnormal, this branch of psychology generally deals with behavior in a clinical context. There is a long history of attempts to understand and control behavior deemed to be aberrant or deviant, and there is often cultural variation in the approach taken.-->

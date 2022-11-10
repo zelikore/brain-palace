@@ -1,0 +1,2 @@
+# painting
+<!--summary: Painting is the practice of applying paint, pigment, color or other medium to a solid surface (called the "support"). The medium is commonly applied to the base with a brush, but other implements, such as knives, sponges, and airbrushes, can be used.-->

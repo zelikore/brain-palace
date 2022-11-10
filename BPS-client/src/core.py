@@ -87,7 +87,9 @@ class BPSclient:
         self.bpsconfig['concepts'].append(concept)
         self.updateConfig()
         # create concept file with create date and other info into a [concept].md
-        file_content = '''# {concept}'''.format(concept=concept['concept'])
+        summary = '<!--summary: ' + concept['summary'] + '-->'
+        file_content = '''# {concept}
+        {summary}'''.format(concept=concept['concept'], summary=summary)
         with open(concept['concept'] + '.md', 'w') as f:
             f.write(file_content)
 
@@ -118,6 +120,23 @@ class BPSclient:
             if t['topic'] == topic:
                 return t
         return None
+    def updateConcept(
+            self,
+            concept,
+            maintainers=None,
+            summary=None,
+            topic=None,
+            tags=None,
+            ):
+        if maintainers:
+            self.bpsconfig['concepts'][concept]['maintainers'] = maintainers
+        if summary:
+            self.bpsconfig['concepts'][concept]['summary'] = summary
+        if topic:
+            self.bpsconfig['concepts'][concept]['topic'] = topic
+        if tags:
+            self.bpsconfig['concepts'][concept]['tags'] = tags
+        self.updateConfig()
 
 def viewConcept(concept):
     # open concept file in editor
@@ -294,8 +313,29 @@ def welcome():
     print('Type "bps --help" to get started')
     print('\n')
 
+def bootstrap():
+    bps = BPSclient()
+    concepts = bps.getConcepts()
+    for concept in concepts:
+        if not os.path.isfile(concept['concept'] + '.md'):
+            # add summary to file
+            #surround summary with special characters
+            summary = '<!--summary: ' + concept['summary'] + '-->'
+            file_content = '''# {concept}
+{summary}'''.format(concept=concept['concept'], summary=summary)
+            with open(concept['concept'] + '.md', 'w') as f:
+                f.write(file_content)
+        else:
+            # read summary from file
+            with open(concept['concept'] + '.md', 'r') as f:
+                file_content = f.read()
+                summary = file_content.split('<!--summary: ')[1].split('-->')[0]
+                #updateconfig file
+                bps.updateConcept(concept, summary=summary)
+
 if __name__ == "__main__":
     if len(sys.argv) == 1:
         welcome()
+        bootstrap()
     else:
         app()

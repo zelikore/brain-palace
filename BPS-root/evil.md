@@ -1,0 +1,2 @@
+# evil
+<!--summary: Evil, in a general context, is the absence or opposite of that which is described as being good. Often, evil is used to denote profound immorality. In certain religious contexts, evil has been described as a supernatural force. Definitions of evil vary, as does the analysis of its motives. However, elements that are commonly associated with evil involve unbalanced behavior involving expediency, selfishness, ignorance, or neglect.-->

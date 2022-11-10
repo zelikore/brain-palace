@@ -1,0 +1,2 @@
+# developmental-psychology
+<!--summary: Developmental psychology is the scientific study of how and why human beings change over the course of their life. Originally concerned with infants and children, the field has expanded to include adolescence, adult development, aging, and the entire lifespan. Developmental psychologists aim to explain how thinking, feeling, and behaviors change throughout life. This field examines change across three major dimensions: physical development, cognitive development, and socioemotional development.-->

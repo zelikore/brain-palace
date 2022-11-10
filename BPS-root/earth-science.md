@@ -1,0 +1,2 @@
+# earth-science
+<!--summary: Earth science or geoscience is an all-embracing term for the sciences related to the planet Earth. It is arguably a special case in planetary science, the Earth being the only known life-bearing planet. There are both reductionist and holistic approaches to Earth sciences. The formal discipline of Earth sciences may include the study of the atmosphere, hydrosphere, oceans and biosphere, as well as the solid earth.-->

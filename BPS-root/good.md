@@ -1,0 +1,2 @@
+# good
+<!--summary: Good is the opposite of evil. Good is a concept of objective benefit, for example to the welfare of an individual or of society. Good may also simply mean that conduct that is legal. However, the specific definition of good in any particular context is relative to the general understanding of what is evil. In the context of ethics, the opposite of good is bad.-->

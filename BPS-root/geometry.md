@@ -1,0 +1,2 @@
+# geometry
+<!--summary: Geometry is a branch of mathematics concerned with questions of shape, size, relative position of figures, and the properties of space. A mathematician who works in the field of geometry is called a geometer.-->

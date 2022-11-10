@@ -1,0 +1,2 @@
+# manipulation
+<!--summary: Manipulation is the skillful handling, controlling or using of something or someone. The ability to manipulate is seen as a sign of power. The action of manipulating can be done in many different ways, such as by: physical contact, mental manipulation, trickery, deception, or by using authority. The action of manipulating can also be seen as a way of using people to get what you want.-->

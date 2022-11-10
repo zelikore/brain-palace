@@ -1,0 +1,2 @@
+# christianity
+<!--summary: Christianity is an Abrahamic monotheistic religion based on the life and teachings of Jesus of Nazareth. Its adherents, known as Christians, believe that Jesus Christ is the Son of God and savior of all people, whose coming as the Messiah was prophesied in the Old Testament. It is the world's largest religion with about 2.4 billion followers.-->

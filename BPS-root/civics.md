@@ -1,0 +1,2 @@
+# civics
+<!--summary: Civics is the study of the theoretical, political and practical aspects of citizenship, as well as its rights and duties; the duties of citizens to each other as members of a political body and to the government.-->
