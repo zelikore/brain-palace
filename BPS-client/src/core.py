@@ -140,8 +140,13 @@ class BPSclient:
             ):
         """Update metadata for the concept identified by ``concept_name``."""
 
-        concept = self.getConcept(concept_name)
-        if not concept:
+        concept = None
+        for c in self.bpsconfig['concepts']:
+            if c.get('concept') == concept_name:
+                concept = c
+                break
+
+        if concept is None:
             return
 
         if maintainers is not None:
