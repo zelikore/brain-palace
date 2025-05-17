@@ -58,16 +58,30 @@ class BPSclient:
 
     # this function removes or adds a tag or maintainer to a concept
     def editConcept(self, concept, tag, maintainer, remove):
-        if remove:
-            if tag:
-                self.bpsconfig['concepts'][concept]['tags'].remove(tag)
-            if maintainer:
-                self.bpsconfig['concepts'][concept]['maintainers'].remove(maintainer)
+        """Modify a concept's tags or maintainers."""
+        target = None
+        if isinstance(concept, dict):
+            target = concept
         else:
-            if tag:
-                self.bpsconfig['concepts'][concept]['tags'].append(tag)
-            if maintainer:
-                self.bpsconfig['concepts'][concept]['maintainers'].append(maintainer)
+            for c in self.bpsconfig['concepts']:
+                if c.get('concept') == concept:
+                    target = c
+                    break
+
+        if target is None:
+            return
+
+        if remove:
+            if tag and tag in target['tags']:
+                target['tags'].remove(tag)
+            if maintainer and maintainer in target['maintainers']:
+                target['maintainers'].remove(maintainer)
+        else:
+            if tag and tag not in target['tags']:
+                target['tags'].append(tag)
+            if maintainer and maintainer not in target['maintainers']:
+                target['maintainers'].append(maintainer)
+
         self.updateConfig()
 
     def addConcept(self):
