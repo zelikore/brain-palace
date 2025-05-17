@@ -47,17 +47,27 @@ class BPSclient:
         self.updateConfig()
 
     # this function removes or adds a tag or maintainer to a concept
-    def editConcept(self, concept, tag, maintainer, remove):
+    def editConcept(self, concept, tag=None, maintainer=None, remove=False):
+        """Modify the metadata for a concept.
+
+        ``concept`` is the concept dictionary returned by ``getConcept``.  The
+        previous implementation attempted to use this value as an index into the
+        ``concepts`` list, which resulted in ``TypeError`` exceptions.  Since the
+        dictionary is already a reference to the entry in ``self.bpsconfig``, we
+        can mutate it directly.
+        """
+
         if remove:
-            if tag:
-                self.bpsconfig['concepts'][concept]['tags'].remove(tag)
-            if maintainer:
-                self.bpsconfig['concepts'][concept]['maintainers'].remove(maintainer)
+            if tag and tag in concept['tags']:
+                concept['tags'].remove(tag)
+            if maintainer and maintainer in concept['maintainers']:
+                concept['maintainers'].remove(maintainer)
         else:
-            if tag:
-                self.bpsconfig['concepts'][concept]['tags'].append(tag)
-            if maintainer:
-                self.bpsconfig['concepts'][concept]['maintainers'].append(maintainer)
+            if tag and tag not in concept['tags']:
+                concept['tags'].append(tag)
+            if maintainer and maintainer not in concept['maintainers']:
+                concept['maintainers'].append(maintainer)
+
         self.updateConfig()
 
     def addConcept(self):
@@ -122,20 +132,27 @@ class BPSclient:
         return None
     def updateConcept(
             self,
-            concept,
+            concept_name,
             maintainers=None,
             summary=None,
             topic=None,
             tags=None,
             ):
-        if maintainers:
-            self.bpsconfig['concepts'][concept]['maintainers'] = maintainers
-        if summary:
-            self.bpsconfig['concepts'][concept]['summary'] = summary
-        if topic:
-            self.bpsconfig['concepts'][concept]['topic'] = topic
-        if tags:
-            self.bpsconfig['concepts'][concept]['tags'] = tags
+        """Update metadata for the concept identified by ``concept_name``."""
+
+        concept = self.getConcept(concept_name)
+        if not concept:
+            return
+
+        if maintainers is not None:
+            concept['maintainers'] = maintainers
+        if summary is not None:
+            concept['summary'] = summary
+        if topic is not None:
+            concept['topic'] = topic
+        if tags is not None:
+            concept['tags'] = tags
+
         self.updateConfig()
 
 def viewConcept(concept):
